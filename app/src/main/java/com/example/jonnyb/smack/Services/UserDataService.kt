@@ -47,5 +47,4 @@ object UserDataService {
 
         return Color.rgb(r,g,b)
     }
-
 }
