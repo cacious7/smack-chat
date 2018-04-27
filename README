@@ -1,0 +1,25 @@
+//INITIALIZING REPOSITORY ON YOUR LOCAL MACHINE
+
+# "git init" => initializes an empty repository (turns a local folder into a repository)
+# "git clone http:\\address_of_repository" => clones/downloads  a repository from the given address
+
+
+//ADDING OR REMOVING FILES
+//note that the "." implies all files.You can replace it with an actual file address to add/rm a sppecific file
+
+# " git add . " => Adds all newly added files to the local repository to be trackedd and compared with remote counterpart
+# " git rm . " => Removes all files from the folder unless a specific address is supplied
+
+//COMMITING
+# "git commit -m 'reason for commit' " =>  A commit is made after making file changes so as to send data with a reason why
+
+//SAVE THE ADDRESS OF A REMOTE SERVER/REPOSITORY
+# "git remote add origin http:\\gitRepository.address\comes\here" => sets the address equal to the variable "origin"
+# "git remote -v" => lists the saved remote repository addresses and names
+
+//SYNCING FILES, PULL, PUSH
+//*Please ALWAYS PULL before you PUSH changes*. In the case that someone has made any changes on same repository that you havnt pulled, you //could end up confusing the data and create inconsistencies
+
+# "git pull origin master" => Gets(pulls) files from "master" branch  belonging to the remote server whose address is saved as "origin"
+# "git push origin master" => sends(pushes) files to "master" branch belonging to the remote server whose address is saved as "origin"
+# "git push --set-upstream-to=origin master" => This saves the branch upstream address to the address "origin master" allowing a user to enter "git push without entering address again for that branch"
